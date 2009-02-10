@@ -1,0 +1,6 @@
+fragment_program fpBlackWhite cg
+{
+	source fpBlackWhite.cg
+	entry_point fpBlackWhite
+	profiles ps_2_0 arbfp1
+}

@@ -1,0 +1,13 @@
+material Space-SkyDome
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Space-SkyDome.jpg
+			}
+		}
+	}
+}

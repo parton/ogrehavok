@@ -1,0 +1,12 @@
+sampler RT : register(s0);
+
+float4 fpBlackWhite(float2 iTexCoord : TEXCOORD0) : COLOR
+{
+    float3 pixel = tex2D(RT, iTexCoord).rgb;
+    //, float3(0.3, 0.59, 0.11));
+    //greyscale.z = 1.0;
+    //greyscale.x = 1.0;
+    //greyscale.y = 1.0;
+    //float woobles = 1.0 - ((pixel.x + pixel.y + pixel.z) * 0.33333);
+	return tex2D(RT, iTexCoord);
+}

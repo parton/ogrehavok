@@ -1,0 +1,15 @@
+float4 fpAlphaMain(
+						in float3 TexelPos 				: TEXCOORD0,
+						uniform float Time
+					) : COLOR
+{
+    
+	float4 oColor;
+	
+    oColor.r = 1.0;
+    oColor.g = 1.0;
+    oColor.b = 1.0;
+    oColor.a = Time;
+
+    return oColor;
+}
