@@ -1,0 +1,6 @@
+fragment_program fpHilight cg
+{
+	source fpHilight.cg
+	entry_point HilightMe
+	profiles ps_2_0 arbfp1
+}

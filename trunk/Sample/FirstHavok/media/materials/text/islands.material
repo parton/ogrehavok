@@ -1,0 +1,5 @@
+material nx.island : diffuse_template
+{
+    set_texture_alias ambient_tex nx.islands.jpg
+    set_texture_alias diffuse_tex nx.islands.jpg
+}

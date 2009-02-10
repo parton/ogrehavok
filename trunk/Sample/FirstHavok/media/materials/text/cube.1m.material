@@ -1,0 +1,66 @@
+import * from "00diffuse.material"
+import * from "00diffuse.material"
+
+material flat-yellow-original
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.000000 0.8 0.200000
+			diffuse 1.000000 0.769854 0.000000
+			specular 0.500000 0.246996 0.000000 30.500000
+			
+
+			
+		}
+	}
+}
+
+material flat-yellow : diffuse_template
+{
+    set_texture_alias ambient_tex nx.cube.ambient.png
+    set_texture_alias diffuse_tex nx.cube.diffuse.png
+}
+
+material flat-yellow-with-alpha
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.000000 0.8 0.200000
+			diffuse 1.000000 0.769854 0.000000
+			specular 0.500000 0.246996 0.000000 30.500000
+			
+			scene_blend alpha_blend
+			
+			vertex_program_ref PlainTexture_VS
+			{
+			}
+			
+			fragment_program_ref YellowColour_PS
+			{
+				param_named_auto colorModulate custom 1
+			}
+
+			texture_unit
+			{
+			}
+			            
+		}
+	}
+}
+
+material gloss-red
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.89 0.14 0.14
+			diffuse 0.76 0.21 0.20
+			specular 0.95 0.34 0.33 30.500000
+		}
+	}
+}

@@ -1,0 +1,9 @@
+import * from "00diffuse.material"
+import * from "00diffuse.material"
+
+material GroundPlane : diffuse_template
+{
+    set_texture_alias ambient_tex nx.floor.png
+    set_texture_alias diffuse_tex nx.floor.png
+}
+

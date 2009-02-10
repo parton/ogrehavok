@@ -1,0 +1,7 @@
+fragment_program Alpha cg
+{
+	source Alpha.cg
+	entry_point fpAlphaMain
+	profiles ps_1_1
+				
+}

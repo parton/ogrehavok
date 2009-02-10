@@ -1,0 +1,18 @@
+// CG Vertex shader definition
+vertex_program PlainTexture_VS cg			
+{
+        // Look in this source file for shader code
+	source PlainTexture.cg
+        // Use this function for the vertex shader			
+	entry_point main_plain_texture_vp	
+        // Compile the shader to vs_1_1 format	
+	profiles vs_1_1					
+
+	// This block saves us from manually setting parameters in code
+        default_params					
+	{
+                // Ogre will put the worldviewproj into our 'worldViewProj' parameter for us.
+		param_named_auto worldViewProj worldviewproj_matrix		
+                // Note that 'worldViewProj' is a parameter in the cg code.
+	}
+}

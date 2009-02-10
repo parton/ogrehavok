@@ -1,0 +1,16 @@
+material MousePointer
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			texture_unit
+			{
+				texture bgui.pointer.png
+				filtering bilinear
+				colour_op modulate
+			}
+		}
+	}
+}

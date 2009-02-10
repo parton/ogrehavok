@@ -1,0 +1,12 @@
+void fpYellowColourMain(
+			float2 diffuse		: TEXCOORD0,
+			 
+			out float4 color	: COLOR,
+			uniform float4 colorModulate,	
+			uniform sampler2D texture)
+{
+	color = tex2D(texture, diffuse);		// Sample the texture
+	color = color * colorModulate;			// Multiply the pixel color by colorModulate
+	color.a = colorModulate.a;				// Set the output alpha to be colorModulate.w
+
+}

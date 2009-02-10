@@ -1,0 +1,20 @@
+material Global-FaceRectangle
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+				
+			fragment_program_ref Colour
+			{
+				param_named_auto Time custom 1
+			}
+			
+			texture_unit
+            {
+            }
+            
+		}
+	}
+}

@@ -1,0 +1,52 @@
+import * from "00diffuse.material"
+import * from "00diffuse.material"
+
+material barrel-from-nxogre.org : diffuse_template
+{
+    set_texture_alias ambient_tex barrel.png
+    set_texture_alias diffuse_tex barrel.png
+}
+
+material container1-from-nxogre.org : diffuse_template
+{
+    set_texture_alias ambient_tex container1.png
+    set_texture_alias diffuse_tex container1.png
+}
+
+material sphere-ccx : diffuse_template
+{
+    set_texture_alias ambient_tex container1.png
+    set_texture_alias diffuse_tex container1.png
+}
+
+
+material weight1-from-nxogre.org : diffuse_template
+{
+    set_texture_alias ambient_tex weight1.png
+    set_texture_alias diffuse_tex weight1.png
+}
+
+material weight2-from-nxogre.org : diffuse_template
+{
+    set_texture_alias ambient_tex weight2.png
+    set_texture_alias diffuse_tex weight2.png
+}
+
+material barrier1-from-nxogre.org : diffuse_template
+{
+    set_texture_alias ambient_tex barrier1.png
+    set_texture_alias diffuse_tex barrier1.png
+}
+
+material cube-from-nxogre.org : diffuse_template
+{
+    set_texture_alias ambient_tex cube.png
+    set_texture_alias diffuse_tex cube.png
+}
+
+
+material i-love-the-cake : logo_emissive
+{
+    set_texture_alias ambient_tex cake.png
+}
+

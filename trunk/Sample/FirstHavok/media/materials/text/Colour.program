@@ -1,0 +1,8 @@
+fragment_program Colour cg
+{
+	source Colour.cg
+	entry_point fpColourMain
+	profiles ps_1_1
+		
+			
+}
